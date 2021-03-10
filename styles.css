@@ -14,7 +14,20 @@ body {
   justify-content: center;
   align-content: center;
 }
-.erstes {
+.flexboxcontainer h2 {
+  text-align: center;
+}
+.flexboxcontainer a {
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  background-color: orange; 
+}
+.flexboxcontainer a:hover {
+  background-color: orangered;
+}
+main {
   margin-top: 40px;
 }
 .familienmitglied {
@@ -23,6 +36,7 @@ body {
 }
 .familienmitglied img {
   max-width:20vw;
+  max-height:20vh;
 }
 .linearbackground {
   background: linear-gradient(180deg, #5e5e5e, #383838);
