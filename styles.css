@@ -28,10 +28,8 @@ article {
   text-align: center;
   padding: 16px;
   text-decoration: none;
-  background-color: orange; 
 }
 .flexboxcontainer a:hover {
-  background-color: orangered;
 }
 .erstes {
   padding-top: 50px;
@@ -77,7 +75,15 @@ article {
   align-items: center;
   justify-content: space-evenly;
   align-content: center;
-
+}
+.visitencontainer a {
+  background: none;
+}
+.visitencontainer a:hover {
+  background-color: none;
+}
+.visitenkartenhuelle {
+  margin: 20px;
 }
 .visitenkarte {
   width: 300px;
@@ -87,32 +93,38 @@ article {
   border-radius: 7px;
   box-shadow: 2px 2px 10px 1px black;
   padding: 20px;
-  margin: 20px;
   color: black;
   overflow: hidden;
+  transition: transform 1s;
 }
 
 .visitenkarte:hover {
-  animation: getbig .25s ease-in-out;
+/*  animation: getbig .25s ease-in-out;
   animation-direction: alternate;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards;*/
+  transform: scale(1.33, 1.33);
+  box-shadow: 0px 0px 100px 20px white;
 }
-@keyframes getbig{
+/*@keyframes getbig{
   0% {
     transform: scale(1,1);
     box-shadow: 2px 2px 10px 1px black;
   }
   100% {
-    transform: scale(2,2);
+    transform: scale(1.5,1.5);
     box-shadow: 20px 20px 100px 10px black;
   }
-}
+}*/
 .visitenkarte:hover img {
 }
 .visitenkarte img {
   object-fit: cover;
   width: 100px;
   height: 100px;
+}
+/*Mina individuell*/
+#reiten {
+  background-image: url("bilder/minaundilja.jpg");
 }
 /* Navigationsleiste*/
 #nav ul {
@@ -161,4 +173,9 @@ article {
   float: none;
   display: list-item;
   position: relative;
+}
+nav ul ul ul li {
+    position: relative;
+    top:50px; 
+    left:170px;
 }
