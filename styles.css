@@ -129,6 +129,40 @@ article {
 #reiten {
   background-image: url("bilder/minaundilja.jpg");
 }
+/*slider*/
+.slider-frame {
+  overflow: hidden;
+  height: 800px;
+  width: 1200px;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {left:0px;}
+  20% {left:0px;}
+  30% {left:1200px;}
+  70% {left:1200px;}
+  80% {left:0px;}
+  100% {left:0px;}
+
+}
+.slide-images {
+  width: 2400px;
+  height: 800px;
+  margin: 0 0 0 -1200px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+.img-container {
+  height: 800px;
+  width: 1200px;
+  position: relative;
+  float: left;
+  z-index: 1;
+}
 /*Christa individuell*/
 #chor a {
   text-decoration: underline;
