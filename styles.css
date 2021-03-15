@@ -149,7 +149,7 @@ article {
 }
 
 /*Mina individuell*/
-#reiten {
+#minahallo {
 }
 /*slider*/
 .slider-frame {
@@ -189,7 +189,12 @@ article {
 #chor a {
   text-decoration: underline;
 }
-
+/*Topbild*/
+#topbild {
+  height: 70vh;
+  overflow: hidden;
+  object-fit: cover;
+}
 /* Navigationsleiste*/
 #nav {
   position: fixed;
