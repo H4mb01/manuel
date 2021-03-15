@@ -15,6 +15,12 @@ article {
 /*Boxlayout*/
 .ganzegr {
   min-height: 100vh;
+  padding-top: 50px;
+}
+.ganzegr .ganzegr {
+  min-width: 80vw;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 .flexboxcontainer {
   display: flex;
@@ -40,6 +46,9 @@ article {
 .linearbackground {
   background: linear-gradient(180deg, #5e5e5e, #383838);
   color: white;
+}
+.linearbackground .linearbackground {
+  background: linear-gradient(0deg, #5e5e5e, #383838);
 }
 /*Projekte*/
 .projekt-grid {
@@ -125,9 +134,22 @@ article {
   width: 100px;
   height: 100px;
 }
+/*Thorsten individuell*/
+#beruf td {
+  vertical-align: top;
+  height: 3rem;
+}
+#beruf table, tr {
+  border: 2px solid #4F81BD;
+  max-width: 50%;
+  border-collapse: collapse;
+}
+#beruf td {
+  padding: 8px;
+}
+
 /*Mina individuell*/
 #reiten {
-  background-image: url("bilder/minaundilja.jpg");
 }
 /*slider*/
 .slider-frame {
@@ -169,38 +191,33 @@ article {
 }
 
 /* Navigationsleiste*/
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-
-}
-
-#nav li {
-    float: left;
-
-}
-
-#nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-
-}
-
-#nav a:hover {
-    background-color: #111111;
-
-}
 #nav {
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 99vw;
+  width: 99.9vw;
+  z-index: 999999;
+  overflow: visible;
+  background-color: #333333;
+}
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  display: inline-block;
+}
+#nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  background-color: #333333;
+}
+#nav a:hover {
+  background-color: #111111;
 }
 #nav ul ul {
   display: none;
@@ -211,13 +228,15 @@ article {
   display: inherit;
 }
 #nav ul ul li {
-  width: 100%;
+  width: 200px;
   float: none;
   display: list-item;
   position: relative;
 }
-nav ul ul ul li {
-    position: relative;
-    top:50px; 
-    left:170px;
+#nav ul ul ul li {
+  position: relative;
+  top:-50px; 
+  left:100%;
 }
+li > a:after { content:  ' +';  }
+li > a:only-child:after { content: '';  }
